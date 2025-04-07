@@ -1,0 +1,433 @@
+<% var data = {
+title: "Для каждой страницы свой заголовок",
+description: "Какое то описание для страницы, для каждой страницы свое описание"
+}; %>
+
+<!--header-->
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main class="doctors__page">
+    <div class="container">
+        <section class="doctors__list">
+            <h2 class="doctors__title main-title">Центр офтальмологии «ГлазоЛик» </h2>
+            <div class="doctors__list-wrapper">
+                <div class="doctors__list-name">
+                    <div class="swiper-wrapper">
+                    </div>
+                </div>
+                <div class="doctors__list-prev slider-prev">
+                    <div class="prev-btn"></div>
+                </div>
+                <div class="doctors__list-next slider-next">
+                    <div class="next-btn"></div>
+                </div>
+            </div>
+            <div class="doctors__list-card">
+                <div class="doctors__card-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="doctors__card-item">
+                                <div class="doctors__card-desc">
+                                    <img src="img/doctor1.png" alt="img" class="doctors__card-img">
+                                    <div class="doctors__title-text">
+                                        <span class="doctors__card-name">Врач-офтальмолог</span>
+                                        <h3 class="doctors__card-title second-title">
+                                            <span>Журбина</span><span>Анастасия</span><span>Анатольевна</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <p class="doctors__card-paragraph">
+                                    Специальность: врач-офтальмолог. Образование: высшее медицинское. Обучалась в Карагандинском государственном медицинском университете. В 2012 году присуждена академическая степень «бакалавр медицины» по специальности «Общая медицина».
+                                    В 2014 году окончила интернатуру по специальности «Общая медицина», присвоена квалификация врача хирурга. В 2017 году окончила резидентуру по специальности «Офтальмология, в том числе детская»
+                                </p>
+                                <a href="#" class="card-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="doctors__card-item">
+                                <div class="doctors__card-desc">
+                                    <img src="img/doctor2.png" alt="img" class="doctors__card-img">
+                                    <div class="doctors__title-text">
+                                        <span class="doctors__card-name">Врач-офтальмолог</span>
+                                        <h3 class="doctors__card-title second-title">
+                                            <span>Баймуханова</span><span>Елена</span><span>Бахтияровна</span></h3>
+                                    </div>
+                                </div>
+                                <p class="doctors__card-paragraph">
+                                    Специальность: врач-офтальмолог. Образование: высшее медицинское. Обучалась в Карагандинском государственном медицинском университете. В 2012 году присуждена академическая степень «бакалавр медицины» по специальности «Общая медицина».
+                                    В 2014 году окончила интернатуру по специальности «Общая медицина», присвоена квалификация врача хирурга. В 2017 году окончила резидентуру по специальности «Офтальмология, в том числе детская»
+                                </p>
+                                <a href="#" class="card-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="doctors__card-item">
+                                <div class="doctors__card-desc">
+                                    <img src="img/doctor3.jpg" alt="img" class="doctors__card-img">
+                                    <div class="doctors__title-text">
+                                        <span class="doctors__card-name">Врач-офтальмолог</span>
+                                        <h3 class="doctors__card-title second-title">
+                                            <span>Вовк</span><span>Ольга</span><span>Викторовна</span></h3>
+                                    </div>
+                                </div>
+                                <p class="doctors__card-paragraph">
+                                    Специальность: врач-офтальмолог. Образование: высшее медицинское. Обучалась в Карагандинском государственном медицинском университете. В 2012 году присуждена академическая степень «бакалавр медицины» по специальности «Общая медицина».
+                                    В 2014 году окончила интернатуру по специальности «Общая медицина», присвоена квалификация врача хирурга. В 2017 году окончила резидентуру по специальности «Офтальмология, в том числе детская»
+                                </p>
+                                <a href="#" class="card-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="doctors__card-item">
+                                <div class="doctors__card-desc">
+                                    <img src="img/doctor4.jpg" alt="img" class="doctors__card-img">
+                                    <div class="doctors__title-text">
+                                        <span class="doctors__card-name">Врач-офтальмолог</span>
+                                        <h3 class="doctors__card-title second-title">
+                                            <span>Сухарева</span><span>Алена</span><span>Валентиновна</span></h3>
+                                    </div>
+                                </div>
+                                <p class="doctors__card-paragraph">
+                                    Специальность: врач-офтальмолог. Образование: высшее медицинское. Обучалась в Карагандинском государственном медицинском университете. В 2012 году присуждена академическая степень «бакалавр медицины» по специальности «Общая медицина».
+                                    В 2014 году окончила интернатуру по специальности «Общая медицина», присвоена квалификация врача хирурга. В 2017 году окончила резидентуру по специальности «Офтальмология, в том числе детская»
+                                </p>
+                                <a href="#" class="card-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="doctors__card-item">
+                                <div class="doctors__card-desc">
+                                    <img src="img/doctor5.jpg" alt="img" class="doctors__card-img">
+                                    <div class="doctors__title-text">
+                                        <span class="doctors__card-name">Врач-офтальмолог</span>
+                                        <h3 class="doctors__card-title second-title">
+                                            <span>Какойто</span><span>Врач</span><span>Сдлиннойфамилией</span></h3>
+                                    </div>
+                                </div>
+                                <p class="doctors__card-paragraph">
+                                    Специальность: врач-офтальмолог. Образование: высшее медицинское. Обучалась в Карагандинском государственном медицинском университете. В 2012 году присуждена академическая степень «бакалавр медицины» по специальности «Общая медицина».
+                                    В 2014 году окончила интернатуру по специальности «Общая медицина», присвоена квалификация врача хирурга. В 2017 году окончила резидентуру по специальности «Офтальмология, в том числе детская»
+                                </p>
+                                <a href="#" class="card-link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors__card-prev slider-prev">
+                    <div class="prev-btn"></div>
+                </div>
+                <div class="doctors__card-next slider-next">
+                    <div class="next-btn"></div>
+                </div>
+            </div>
+            <form class="second__form doctors__form" id="doctor-form" method="post">
+                <h2 class="second__form-title main-title">Запишитесь на прием</h2>
+                <input type="tel" class="second__form-input" placeholder="Ваш телефон">
+                <input type="email" class="second__form-input" placeholder="Ваш E-mail">
+                <label for="doctors-upload" class="second__form-upload form__body-upload">
+                    <span class="upload-icon main-btn"></span>
+                    <span id="doctors-file-name"  class="upload-title">Можете прикрепить документ</span>
+                    <input hidden id="doctors-upload" type="file" name="userfile" size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx" aria-invalid="false">
+                </label>
+                <button class="second__form-submit main-btn" type="submit">Записаться</button>
+            </form>
+        </section>
+        <section class="popular">
+            <h2 class="popular__title main-title">Популярные услуги</h2>
+            <div class="popular__block">
+                <a href="#" class="popular__item">Коррекция зрения</a>
+                <a href="#" class="popular__item">Коррекция зрения</a>
+                <a href="#" class="popular__item">Коррекция зрения</a>
+                <a href="#" class="popular__item">Коррекция зрения</a>
+                <a href="#" class="popular__item">Коррекция зрения</a>
+                <a href="#" class="popular__item">Коррекция зрения</a>
+                <a href="#" class="popular__item">Коррекция зрения</a>
+            </div>
+        </section>
+        <section class="form">
+            <h2 class="form__title main-title">Мы свяжемся с Вами и проконсультируем!</h2>
+            <div class="form__background">
+                <img src="img/formbg1.png" alt="img" class="form__background-img">
+            </div>
+            <form class="form__body" id="doctors_form" action="#" method="post">
+                <input type="tel" name="phone" class="form__body-input" placeholder="Ваш телефон">
+                <input type="text" name="email" class="form__body-input" placeholder="Ваш E-mail">
+                <textarea name="comment" class="form__body-comment" rows="1" placeholder="Ваш Комментарий"></textarea>
+                <div class="form__body-btn">
+                    <label for="upload" class="form__body-upload">
+                        <span class="upload-icon main-btn"></span>
+                        <span class="upload-title">Можете прикрепить документ</span>
+                        <input hidden id="upload" type="file" name="userfile" size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx" aria-invalid="false">
+                    </label>
+                    <button class="form__body-submit main-btn" type="submit">Отправить</button>
+                </div>
+            </form>
+        </section>
+        <section class="questions">
+            <h2 class="questions__title main-title">Ответы на часто задаваемые вопросы</h2>
+            <div class="questions__tab tab">
+                <span class="questions__tab-item tab-item" data-item="1">Коррекция зрения</span>
+                <span class="questions__tab-item tab-item" data-item="2">Скорректировать зрение</span>
+                <span class="questions__tab-item tab-item" data-item="3">Рекомендации после Lasic</span>
+            </div>
+            <div class="questions__list questions__list-1" data-item="1">
+                <div class="questions__list-item">
+                    <h3 class="questions__item-title second-title">Коррекция Зрения по методу Lasic безопасна ?</h3>
+                    <div class="questions__item-text">
+                        <span class="questions__text-title">Ответ</span>
+                        <p class="questions__text-desc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised
+                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also
+                            the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more recently with desktop publishing software like
+                            Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <button class="questions__btn-open"><span>Смотреть</span></button>
+                    <button class="questions__btn-close"><span>Закрыть</span></button>
+                </div>
+                <div class="questions__list-item">
+                    <h3 class="questions__item-title second-title">Коррекция Зрения по методу Lasic безопасна ?</h3>
+                    <div class="questions__item-text">
+                        <span class="questions__text-title">Ответ</span>
+                        <p class="questions__text-desc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised
+                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also
+                            the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more recently with desktop publishing software like
+                            Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <button class="questions__btn-open"><span>Смотреть</span></button>
+                    <button class="questions__btn-close"><span>Закрыть</span></button>
+                </div>
+                <div class="questions__list-item">
+                    <h3 class="questions__item-title second-title">Коррекция Зрения по методу Lasic безопасна ?</h3>
+                    <div class="questions__item-text">
+                        <span class="questions__text-title">Ответ</span>
+                        <p class="questions__text-desc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised
+                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also
+                            the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more recently with desktop publishing software like
+                            Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <button class="questions__btn-open"><span>Смотреть</span></button>
+                    <button class="questions__btn-close"><span>Закрыть</span></button>
+                </div>
+                <div class="questions__list-item">
+                    <h3 class="questions__item-title second-title">Коррекция Зрения по методу Lasic безопасна ?</h3>
+                    <div class="questions__item-text">
+                        <span class="questions__text-title">Ответ</span>
+                        <p class="questions__text-desc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised
+                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also
+                            the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more recently with desktop publishing software like
+                            Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <button class="questions__btn-open"><span>Смотреть</span></button>
+                    <button class="questions__btn-close"><span>Закрыть</span></button>
+                </div>
+                <div class="questions__list-item">
+                    <h3 class="questions__item-title second-title">Коррекция Зрения по методу Lasic безопасна ?</h3>
+                    <div class="questions__item-text">
+                        <span class="questions__text-title">Ответ</span>
+                        <p class="questions__text-desc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised
+                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also
+                            the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more recently with desktop publishing software like
+                            Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <button class="questions__btn-open"><span>Смотреть</span></button>
+                    <button class="questions__btn-close"><span>Закрыть</span></button>
+                </div>
+            </div>
+            <div class="questions__list questions__list-2" data-item="2">
+                <div class="questions__list-item">
+                    <h3 class="questions__item-title second-title">Коррекция Зрения по методу Lasic безопасна ?</h3>
+                    <div class="questions__item-text">
+                        <span class="questions__text-title">Ответ</span>
+                        <p class="questions__text-desc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised
+                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also
+                            the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more recently with desktop publishing software like
+                            Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <button class="questions__btn-open"><span>Смотреть</span></button>
+                    <button class="questions__btn-close"><span>Закрыть</span></button>
+                </div>
+                <div class="questions__list-item">
+                    <h3 class="questions__item-title second-title">Коррекция Зрения по методу Lasic безопасна ?</h3>
+                    <div class="questions__item-text">
+                        <span class="questions__text-title">Ответ</span>
+                        <p class="questions__text-desc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised
+                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also
+                            the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more recently with desktop publishing software like
+                            Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <button class="questions__btn-open"><span>Смотреть</span></button>
+                    <button class="questions__btn-close"><span>Закрыть</span></button>
+                </div>
+                <div class="questions__list-item">
+                    <h3 class="questions__item-title second-title">Коррекция Зрения по методу Lasic безопасна ?</h3>
+                    <div class="questions__item-text">
+                        <span class="questions__text-title">Ответ</span>
+                        <p class="questions__text-desc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised
+                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also
+                            the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more recently with desktop publishing software like
+                            Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <button class="questions__btn-open"><span>Смотреть</span></button>
+                    <button class="questions__btn-close"><span>Закрыть</span></button>
+                </div>
+            </div>
+            <div class="questions__list questions__list-3" data-item="3">
+                <div class="questions__list-item">
+                    <h3 class="questions__item-title second-title">Коррекция Зрения по методу Lasic безопасна ?</h3>
+                    <div class="questions__item-text">
+                        <span class="questions__text-title">Ответ</span>
+                        <p class="questions__text-desc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised
+                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also
+                            the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more recently with desktop publishing software like
+                            Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <button class="questions__btn-open"><span>Смотреть</span></button>
+                    <button class="questions__btn-close"><span>Закрыть</span></button>
+                </div>
+                <div class="questions__list-item">
+                    <h3 class="questions__item-title second-title">Коррекция Зрения по методу Lasic безопасна ?</h3>
+                    <div class="questions__item-text">
+                        <span class="questions__text-title">Ответ</span>
+                        <p class="questions__text-desc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised
+                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also
+                            the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more recently with desktop publishing software like
+                            Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <button class="questions__btn-open"><span>Смотреть</span></button>
+                    <button class="questions__btn-close"><span>Закрыть</span></button>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<!--footer-->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

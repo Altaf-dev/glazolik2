@@ -1,0 +1,141 @@
+@import "color.scss";
+@import "container.scss";
+@import "search.scss";
+@import "header.scss";
+@import "main.scss";
+@import "buttons.scss";
+@import "title.scss";
+@import "advantage.scss";
+@import "form.scss";
+@import "meta.scss";
+@import "slider.scss";
+@import "filter.scss";
+@import "about.scss";
+@import "benefits.scss";
+@import "popular.scss";
+@import "questions.scss";
+@import "answers.scss";
+@import "doctors.scss";
+@import "service.scss";
+@import "contacts.scss";
+@import "reviews.scss";
+@import "services.scss";
+@import "footer.scss";
+@import "breadcrumbs.scss";
+@import "modals.scss";
+@import "404.scss";
+@import "plug.scss";
+
+* {
+  box-sizing: border-box;
+
+  &:after,
+  &:before {
+    transition: inherit;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+body {
+  font-family: 'Rubik', sans-serif;
+  overflow-x: hidden;
+  color: $text-main;
+  background-color: $body-color;
+}
+
+:root {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $text-main;
+  transition: .3s;
+}
+
+input,
+button,
+textarea {
+  outline: none;
+  background: none;
+  border: none;
+  padding: 0;
+  color: $text-main;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.tooltip {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  &__thumb {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    @media screen and (max-width: 767px) {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  &__text {
+    max-width: 475px;
+    margin-left: 40px;
+    font-size: 1.6rem;
+    font-style: italic;
+    @media screen and (max-width: 1400px) {
+      margin-left: 30px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    .noteName {
+      color: $orange-color;
+    }
+    .noteText {
+      color: $text-color;
+    }
+  }
+}
+
+.card-link {
+  display: none;
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $green-color;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
+
+.caution {
+  display: block;
+  width: fit-content;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $orange-color;
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 425px) {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,288 @@
+@import "color.scss";
+
+.upload {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    .upload__icon {
+      border: 2px solid $green-color;
+      &:before,
+      &:after {
+        background-color: $green-color;
+      }
+    }
+    .upload__name {
+      color: $green-color;
+    }
+  }
+  &__icon {
+    position: relative;
+    display: flex;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid $orange-color;
+    background-color: $white-color;
+    transition: .3s;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $orange-color;
+      transition: .3s;
+    }
+    &:before {
+      width: 10px;
+      height: 1px;
+    }
+    &:after {
+      width: 1px;
+      height: 10px;
+    }
+  }
+  &__name {
+    margin-left: 30px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    transition: .3s;
+    @media screen and (max-width: 767px) {
+      margin-left: 25px;
+    }
+  }
+
+}
+.textarea,
+.input-primary {
+  flex-basis: 30.8%;
+  padding: 25px 0;
+  border-bottom: 1px solid $text-color;
+  font-size: 1.8rem;
+  font-weight: 300;
+  resize: none;
+  @media screen and (max-width: 1199px) {
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 15px 0;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+}
+.input-second {
+  max-width: 365px;
+  width: 100%;
+  height: 50px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  box-shadow: inset 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
+  &::placeholder {
+    font-weight: 300;
+  }
+  @media screen and (max-width: 1400px) {
+    max-width: 330px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  @media screen and (max-width: 1199px) {
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+.submit {
+  width: max-content;
+  min-height: 50px;
+  display: block;
+  padding: 8px 30px;
+  margin-top: 20px;
+  border-radius: 25px;
+  color: $orange-color;
+  font-size: 1.6rem;
+  border: 2px solid $orange-color;
+  background-color: $white-color;
+  cursor: pointer;
+  transition: .3s;
+  &:hover {
+    border: 2px solid $green-color;
+    color: $green-color;
+  }
+  @media screen and (max-width: 1400px) {
+    margin-top: 35px;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 280px;
+    width: 100%;
+    margin-top: 45px;
+  }
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 100px;
+  @media screen and (max-width: 1600px) {
+    padding-top: 25px;
+    padding-bottom: 75px;
+  }
+  @media screen and (max-width: 1400px) {
+    padding: 60px 0;
+  }
+  @media screen and (max-width: 1199px) {
+    padding-top: 30px;
+    padding-bottom: 55px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 45px 0;
+  }
+
+  &__title {
+    text-align: center;
+    @media screen and (max-width: 767px) {
+      padding: 0 20px;
+    }
+  }
+  &__subtitle {
+    margin-top: 40px;
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    @media screen and (max-width: 1400px) {
+      margin-top: 30px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 15px;
+      font-size: 1.4rem;
+      letter-spacing: 3px;
+    }
+  }
+  &__background {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    @media screen and (max-width: 1400px) {
+      margin: 30px 0;
+    }
+    @media screen and (max-width: 767px) {
+      margin: 25px 0;
+    }
+  }
+  &__background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    margin-top: 85px;
+    @media screen and (max-width: 1600px) {
+      padding: 0 40px;
+      margin-top: 75px;
+    }
+    @media screen and (max-width: 1400px) {
+      margin-top: 30px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      margin-top: 45px;
+    }
+    @media screen and (max-width: 767px) {
+      padding: 0;
+      margin-top: 0;
+    }
+
+  }
+  &__btn-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto 0;
+    @media screen and (max-width: 1400px) {
+      margin: 30px auto 0;
+    }
+    @media screen and (max-width: 1199px) {
+      margin: 35px auto 0;
+    }
+  }
+
+}
+.second {
+  &__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 520px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+    background-color: $white-color;
+    box-shadow: 0 0 15px 0 rgba(92, 92, 92, 0.16);
+    border-radius: 10px;
+    @media screen and (max-width: 1400px) {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 100%;
+      height: auto;
+      padding: 135px 30px 60px;
+      margin-top: 30px;
+    }
+    @media screen and (max-width: 1199px) {
+      flex-direction: column;
+      max-width: 720px;
+      padding: 50px 0;
+    }
+    @media screen and (max-width: 767px) {
+      padding: 50px 20px;
+    }
+    .upload-title {
+      @media screen and (max-width: 1400px) {
+        width: 160px;
+      }
+      @media screen and (max-width: 1199px) {
+        width: auto;
+      }
+      @media screen and (max-width: 425px) {
+        margin-left: 15px;
+      }
+    }
+  }
+  &__form-title {
+    margin-bottom: 90px;
+    @media screen and (max-width: 1400px) {
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      margin: 0;
+    }
+    @media screen and (max-width: 1199px) {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      margin-bottom: 45px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 2.2rem;
+    }
+  }
+}

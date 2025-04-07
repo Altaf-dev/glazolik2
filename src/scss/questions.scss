@@ -1,0 +1,226 @@
+@import "color.scss";
+
+.questions {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  @media screen and (max-width: 1600px) {
+    padding: 75px 0;
+  }
+  @media screen and (max-width: 1400px) {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+  @media screen and (max-width: 1199px) {
+    padding: 55px 0;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 20px 0;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__tab {
+    margin-bottom: 0;
+  }
+
+  &__tab-item {
+    margin-right: 125px;
+    @media screen and (max-width: 1199px) {
+      padding-left: 20px;
+    }
+    @media screen and (max-width: 767px) {
+      padding-left: 0;
+    }
+  }
+
+  &__list {
+    display: none;
+    min-height: 220px;
+    &.active  {
+      display: block;
+    }
+    @media screen and (max-width: 767px) {
+
+    }
+    @media screen and (max-width: 767px) {
+      min-height: 220px;
+    }
+  }
+
+  &__list-item {
+    padding: 40px 30px;
+    position: relative;
+    border-bottom: 1px solid $border;
+    @media screen and (max-width: 1199px) {
+      padding: 40px 20px;
+    }
+    @media screen and (max-width: 767px) {
+      padding: 40px 0;
+    }
+    &.active {
+      .questions__item-text {
+        max-height: 1000px;
+      }
+      .questions__btn-open {
+        display: none;
+      }
+      .questions__btn-close {
+        display: block;
+      }
+    }
+  }
+
+  &__item-title {
+    cursor: pointer;
+    font-weight: 400;
+    @media screen and (max-width: 1199px) {
+      padding-right: 130px;
+    }
+    @media screen and (max-width: 767px) {
+      padding-right: 40px;
+    }
+  }
+
+  &__item-text {
+    width: 50%;
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
+    @media screen and (max-width: 1600px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 1199px) {
+      width: 80%;
+    }
+  }
+
+  &__text-title {
+    display: block;
+    margin: 45px 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+    @media screen and (max-width: 767px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__text-desc {
+    font-size: 1.6rem;
+  }
+
+  &__btn-open,
+  &__btn-close {
+    &:hover {
+      color: $orange-color;
+      &:before,
+      &:after {
+        background-color: $orange-color;
+      }
+    }
+  }
+
+  &__btn-open {
+    position: absolute;
+    text-align: start;
+    top: 45px;
+    right: 70px;
+    color: $green-color;
+    font-size: 1.6rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .3s;
+    @media screen and (max-width: 1400px) {
+      right: 50px;
+    }
+    @media screen and (max-width: 1199px) {
+      right: 20px;
+    }
+    @media screen and (max-width: 767px) {
+      right: 0;
+      width: 13px;
+      height: 13px;
+      padding: 0;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-bottom: 2px solid $text-color;
+        border-right: 2px solid $text-color;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+
+  &__btn-close {
+    position: absolute;
+    text-align: start;
+    display: none;
+    top: 45px;
+    right: 40px;
+    height: 20px;
+    padding-right: 40px;
+    color: $green-color;
+    font-size: 1.6rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .3s;
+    @media screen and (max-width: 1400px) {
+      right: 20px;
+    }
+    @media screen and (max-width: 1199px) {
+      top: 110px;
+    }
+    @media screen and (max-width: 767px) {
+      right: 0;
+    }
+    @media screen and (max-width: 767px) {
+      width: 13px;
+      height: 13px;
+      padding: 0;
+      span {
+        display: none;
+      }
+    }
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 2px;
+      top: 50%;
+      right: 0;
+      border-radius: 2px;
+      background-color: $green-color;
+      @media screen and (max-width: 767px) {
+        right: auto;
+        left: 50%;
+      }
+    }
+    &:before {
+      transform: translate(0, -50%) rotate(45deg);
+      @media screen and (max-width: 767px) {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    }
+    &:after {
+      transform: translate(0, -50%) rotate(-45deg);
+      @media screen and (max-width: 767px) {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+@import "color.scss";
+
+.search {
+  width: 100%;
+  max-height: 0;
+  background-color: $orange-color;
+  overflow: hidden;
+  opacity: 0;
+  transition: .3s;
+  @media screen and (max-width: 767px) {
+    max-height: fit-content;
+    opacity: 1;
+    order: 1;
+    background-color: $white-color;
+  }
+
+  &__wrapper {
+    position: relative;
+    max-width: 1720px;
+    width: 100%;
+    padding: 25px 70px 25px 20px;
+    margin: 0 auto;
+    transition: .3s;
+    @media screen and (max-width: 767px) {
+      padding: 0 20px;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+  }
+
+  &__body {
+    position: relative;
+    max-width: 1590px;
+    width: 100%;
+    height: 50px;
+    //overflow: hidden;
+    &:hover {
+      .search__btn {
+        transform: scale(1.2);
+      }
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 425px) {
+      height: 40px;
+    }
+  }
+
+  &__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 65px;
+    padding-right: 20px;
+    border-radius: 25px;
+    background-color: $white-color;
+    font-size: 1.6rem;
+    @media screen and (max-width: 767px) {
+      padding-left: 40px;
+      background-color: $input-color;
+      border-radius: 10px;
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 10px;
+    transition: .3s;
+    &:before {
+      content: '';
+      position: absolute;
+      background-image: url("../img/search.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 55%;
+      height: 55%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @media screen and (max-width: 767px) {
+      left: 10px;
+      top: 10px;
+    }
+    @media screen and (max-width: 425px) {
+      top: 2.5px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 30px;
+    right: 20px;
+    &:hover {
+      transform: scale(1.2);
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &.active {
+    max-height: 300px;
+    opacity: 1;
+    overflow: visible;
+  }
+}
+
+.search-result {
+  position: absolute;
+  width: 100%;
+  max-height: 0;
+  border-radius: 25px;
+  top: 50px;
+  padding-left: 50px;
+  padding-right: 10px;
+  z-index: 60;
+  background-color: $white-color;
+  box-shadow: 0 0 0 1px rgba(255, 134, 54, 1) inset;
+  overflow: hidden;
+  transition: .3s;
+  @media screen and (max-width: 767px) {
+    top: 55px;
+    padding-left: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgba(247, 247, 247, 1) inset;
+    background-color: $input-color;
+  }
+  @media screen and (max-width: 425px) {
+    top: 45px;
+  }
+  &.active {
+    max-height: 30vh;
+  }
+
+  &__list {
+    max-height: 30vh;
+    overflow-y: auto;
+  }
+
+  &__list-item {
+    font-size: 1.8rem;
+    padding: 15px;
+    a {
+      transition: .3s;
+      &:hover {
+        color: $orange-color;
+      }
+    }
+  }
+
+  &__not-result {
+    display: none;
+    font-size: 1.8rem;
+    padding: 15px;
+    &.active {
+      display: block;
+    }
+  }
+}

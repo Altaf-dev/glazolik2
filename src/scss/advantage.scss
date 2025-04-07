@@ -1,0 +1,70 @@
+@import "color.scss";
+
+.advantage {
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 100px 0;
+
+  @media screen and (max-width: 1600px) {
+    padding: 75px 0;
+  }
+  @media screen and (max-width: 1400px) {
+    padding: 60px 0;
+  }
+  @media screen and (max-width: 1199px) {
+    padding: 55px 0;
+  }
+  @media screen and (max-width: 767px) {
+    justify-content: space-evenly;
+
+    padding: 45px 0;
+  }
+  @media screen and (max-width: 425px) {
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 230px;
+    @media screen and (max-width: 1400px) {
+      align-items: center;
+    }
+    @media screen and (max-width: 1199px) {
+      width: 205px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 115px;
+    }
+  }
+  &__item-image {
+    display: block;
+    object-fit: contain;
+    height: 40px;
+    @media screen and (max-width: 767px) {
+      height: 23px;
+    }
+  }
+  &__item-text {
+    width: 100%;
+    margin-top: 24px;
+    font-size: 2.4rem;
+    @media screen and (max-width: 1400px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 1199px) {
+      margin-top: 16px;
+      font-size: 1.8rem;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 1.4rem;
+    }
+    @media screen and (max-width: 325px) {
+      font-size: 1.2rem;
+    }
+  }
+
+}

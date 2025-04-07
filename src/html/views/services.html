@@ -1,0 +1,144 @@
+<% var data = {
+title: "Для каждой страницы свой заголовок",
+description: "Какое то описание для страницы, для каждой страницы свое описание"
+}; %>
+
+<!--header-->
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main class="services__page">
+    <div class="container">
+        <section class="services__block">
+            <h2 class="services__title main-title">Свыше 100 видов офтальмологических услуг</h2>
+            <img src="img/main-img.svg" alt="img" class="services__decor">
+            <ul class="services__list">
+                <li class="services__list-item">
+                    <span class="services__item-title">Полное называние</span>
+                    <button class="services__item-btn">Запись на прием</button>
+                </li>
+                <li class="services__list-item">
+                    <span class="services__item-title">Полное называние</span>
+                    <button class="services__item-btn">Запись на прием</button>
+                </li>
+                <li class="services__list-item">
+                    <span class="services__item-title">Полное называние</span>
+                    <button class="services__item-btn">Запись на прием</button>
+                </li>
+                <li class="services__list-item">
+                    <span class="services__item-title">Полное называние</span>
+                    <button class="services__item-btn">Запись на прием</button>
+                </li>
+            </ul>
+            <span class="caution">* Уточняйте цену лечения у оператора</span>
+            <div class="services__pagination">
+                <div class="services__pagination-prev slider-prev">
+                    <div class="prev-btn"></div>
+                </div>
+                <span class="services__pagination-num">1</span>
+                <span class="services__pagination-num active">2</span>
+                <span class="services__pagination-num">3</span>
+                <span class="services__pagination-num">4</span>
+                <div class="services__pagination-next slider-next">
+                    <div class="next-btn"></div>
+                </div>
+            </div>
+        </section>
+        <section class="popular">
+            <h2 class="popular__title main-title">Популярные услуги</h2>
+            <div class="popular__block">
+                <a href="#" class="popular__item">Коррекция зрения</a>
+                <a href="#" class="popular__item">Коррекция зрения</a>
+                <a href="#" class="popular__item">Коррекция зрения</a>
+                <a href="#" class="popular__item">Коррекция зрения</a>
+                <a href="#" class="popular__item">Коррекция зрения</a>
+                <a href="#" class="popular__item">Коррекция зрения</a>
+                <a href="#" class="popular__item">Коррекция зрения</a>
+            </div>
+        </section>
+        <section class="form">
+            <h2 class="form__title main-title">Мы свяжемся с Вами и проконсультируем!</h2>
+            <div class="form__background">
+                <img src="img/formbg4.png" alt="img" class="form__background-img">
+            </div>
+            <form class="form__body" id="main_form" action="#" method="post">
+                <input type="tel" name="phone" class="input-primary" placeholder="Ваш телефон" required>
+                <input type="text" name="email" class="input-primary" placeholder="Ваш E-mail">
+                <textarea name="comment" class="textarea" rows="1" placeholder="Ваш Комментарий"></textarea>
+                <div class="form__btn-block">
+                    <label for="upload" class="upload">
+                        <span class="upload__icon"></span>
+                        <span id="file-name" class="upload__name fileName">Прикрепить заявку</span>
+                        <input hidden id="upload" class="inputFile" type="file" name="userfile" size="40"
+                               accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx" aria-invalid="false">
+                    </label>
+                    <button class="submit" type="submit">Отправить</button>
+                </div>
+            </form>
+        </section>
+        <section class="benefits">
+            <div class="benefits__desc">
+                <h2 class="benefits__title main-title">Заголовок для SEO текста</h2>
+                <p class="benefits__paragraph">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book. It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised
+                    in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged.
+                    It was popularised in the 1960s with the release of Letraset sheets containing
+                    Lorem Ipsum passages, and more recently with desktop publishing software like
+                    Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <div class="tooltip">
+                    <img src="img/tools2.jpg" alt="img" class="tooltip__thumb">
+                    <span class="tooltip__text">
+                        <span>Какая - то памятка</span>
+                         - в виде обычного текста, будет на каждой услуге.
+                        Это полезный И необходимый контент. В каждом, конкретном случае,
+                        он может быть разным.Например, поставим цены или рекомендации по услуге.
+                    </span>
+                </div>
+            </div>
+            <div class="benefits__bg">
+                <img src="img/services-decor.png" alt="img" class="benefits__img">
+            </div>
+        </section>
+        <section class="meta">
+            <h2 class="meta__title main-title">Вас может заинтересовать</h2>
+            <img src="img/eye-down.svg" alt="img" class="meta__background">
+            <div class="meta__block">
+                <div class="meta__block-wrapper">
+                    <a href="./services.html" class="meta__link">Лечение близорукости</a>
+                    <a href="./services.html" class="meta__link">Лечение катаракты</a>
+                    <a href="./services.html" class="meta__link">Лечение близорукости</a>
+                    <a href="./services.html" class="meta__link">Лечение катаракты</a>
+                    <a href="./services.html" class="meta__link">Лечение катаракты</a>
+                    <a href="./services.html" class="meta__link">Лечение близорукости</a>
+                    <a href="./services.html" class="meta__link">Лечение катаракты</a>
+                    <a href="./services.html" class="meta__link">Лечение катаракты</a>
+                    <a href="./services.html" class="meta__link">Лечение катаракты</a>
+                    <a href="./services.html" class="meta__link">Лечение катаракты</a>
+                    <a href="./services.html" class="meta__link">Лечение катаракты</a>
+                    <a href="./services.html" class="meta__link">Лечение катаракты</a>
+                    <a href="./services.html" class="meta__link">Лечение катаракты</a>
+                    <a href="./services.html" class="meta__link">Лечение катаракты</a>
+                    <a href="./services.html" class="meta__link">Лечение катаракты</a>
+                    <a href="./services.html" class="meta__link">Лечение катаракты</a>
+                    <a href="./services.html" class="meta__link">Лечение катаракты</a>
+                </div>
+            </div>
+            <button class="meta__btn main-btn">
+                <span class="meta__btn-title-1">Показать eще</span>
+                <span class="meta__btn-title-2">Скрыть</span>
+            </button>
+        </section>
+    </div>
+</main>
+<!--footer-->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

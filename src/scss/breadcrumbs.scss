@@ -1,0 +1,9 @@
+@import "color.scss";
+
+.breadcrumbs {
+  padding: 20px 0;
+  font-size: 1.4rem;
+  .breadcrumb_last {
+    color: $orange-color;
+  }
+}

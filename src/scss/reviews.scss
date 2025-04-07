@@ -1,0 +1,112 @@
+@import "color.scss";
+
+
+.reviews {
+  display: none;
+  overflow: hidden;
+  max-height: 425px;
+  &.active {
+    display: block;
+  }
+  @media screen and (max-width: 1400px) {
+    padding: 0 90px;
+    max-height: none;
+  }
+  @media screen and (max-width: 1199px) {
+    width: 1120px;
+    padding: 0 20px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 860px;
+  }
+  @media screen and (max-width: 425px) {
+    width: 460px;
+  }
+  .swiper-slide {
+    @media screen and (max-width: 1100px) {
+      opacity: 0.5;
+    }
+  }
+  .swiper-slide-active {
+    @media screen and (max-width: 1100px) {
+      opacity: 1;
+    }
+  }
+  &__slide {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 20px 20px;
+    .slide-img {
+      display: block;
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      object-fit: cover;
+      @media screen and (max-width: 1400px) {
+        position: absolute;
+      }
+      @media screen and (max-width: 767px) {
+        position: static;
+      }
+      @media screen and (max-width: 425px) {
+        width: 110px;
+        height: 110px;
+
+      }
+    }
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    width: calc(75% - 70px);
+    @media screen and (max-width: 1400px) {
+      width: 100%;
+      margin-top: 35px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__date {
+    font-size: 1.6rem;
+    color: $orange-color;
+    @media screen and (max-width: 1400px) {
+      margin-left: 220px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-left: 0;
+    }
+  }
+
+  &__name {
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 1400px) {
+      margin-left: 220px;
+      margin-bottom: 80px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+
+  &__paragraph {
+    max-height: 210px;
+    padding-right: 10px;
+    font-size: 1.6rem;
+    overflow: auto;
+  }
+
+}
+
